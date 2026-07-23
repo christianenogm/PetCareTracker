@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Pet Care Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application for pet registration and tracking, with care tasks and data persistence using Firebase Firestore.
 
-## Available Scripts
+## About the project
 
-In the project directory, you can run:
+This project was developed for the INFO-5143 (JavaScript 4) course and allows users to:
 
-### `npm start`
+- register new pets
+- list and view each pet's details
+- edit pet and owner information
+- remove pets
+- manage care tasks (feed, walk, vet appointment, bath, and custom tasks)
+- navigate through tips, gallery, FAQ, and privacy policy pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- React Router
+- Sass
+- Firebase (Cloud Firestore)
 
-### `npm test`
+## Main structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `src/App.js`: routes and global pet state
+- `src/components/Form/Form.js`: new pet registration form
+- `src/components/Tasks/Tasks.js`: pet list page
+- `src/components/PetDetails/PetDetails.js`: pet details and editing
+- `src/firebaseConfig.js`: Firebase initialization
 
-### `npm run build`
+## How to run locally
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js installed
+- npm installed
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Steps
 
-### `npm run eject`
+1. Install dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Start the project:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Open in your browser:
 
-## Learn More
+```txt
+http://localhost:3000
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Firebase (Firestore)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project uses the `pets` collection in Cloud Firestore.
 
-### Code Splitting
+If you see a permission error while saving ("Missing or insufficient permissions"), update your Firestore rules in Firebase Console.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Temporary rule example for testing:
 
-### Analyzing the Bundle Size
+```txt
+rules_version = '2';
+service cloud.firestore {
+	match /databases/{database}/documents {
+		match /pets/{petId} {
+			allow read, write: if true;
+		}
+	}
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Screenshots
 
-### Making a Progressive Web App
+Project screenshots were added as PDF files in the `doc/` folder:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [Home](doc/Pet%20Care%20Tracker%20-%20Home.pdf)
+- [Pet](doc/Pet%20Care%20Tracker%20-%20Pet.pdf)
+- [New Pet](doc/Pet%20Care%20Tracker%20-%20New%20Pet.pdf)
+- [New Pet with vaccinated](doc/Pet%20Care%20Tracker%20-%20New%20Pet%20with%20vaccinated.pdf)
+- [Tips](doc/Pet%20Care%20Tracker%20-%20Tips.pdf)
+- [Gallery](doc/Pet%20Care%20Tracker%20-%20Gallery.pdf)
+- [FAQ](doc/Pet%20Care%20Tracker%20-%20FAQ.pdf)
 
-### Advanced Configuration
+## Available scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- `npm start`: runs the app in development mode
+- `npm run build`: creates a production build
+- `npm test`: runs tests
 
-### Deployment
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Christiane

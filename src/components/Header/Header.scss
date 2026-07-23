@@ -1,0 +1,110 @@
+// Header.scss
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--ui-border);
+    background: var(--ui-surface);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+
+    .eyebrow {
+        font-size: 0.72rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #9b6b2d;
+        font-weight: 700;
+        margin-bottom: 0.2rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.02em;
+
+        .title-logo {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 0.45rem;
+            object-fit: contain;
+        }
+
+        span {
+            color: #8b5e24;
+            background: linear-gradient(120deg, #f3c35a 0%, #c6892d 40%, #8b5e24 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .author {
+        font-size: 0.875rem;
+        color: var(--ui-muted);
+        font-weight: 500;
+        max-width: 18rem;
+        text-align: right;
+        line-height: 1.4;
+    }
+
+    .header-right {
+        display: grid;
+        justify-items: end;
+        gap: 0.35rem;
+    }
+
+    .lang-switch {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+    }
+
+    .lang-link {
+        border: none;
+        background: transparent;
+        padding: 0;
+        font-size: 0.78rem;
+        letter-spacing: 0.03em;
+        color: #6e6458;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            color: #8b5e24;
+        }
+
+        &.active {
+            color: #8b5e24;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+    }
+
+    .lang-divider {
+        color: #b29f86;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        align-items: flex-start;
+        gap: 0.4rem;
+        flex-direction: column;
+        padding: 0.85rem 1rem;
+
+        .title {
+            font-size: 1.3rem;
+        }
+
+        .author {
+            text-align: left;
+        }
+
+        .header-right {
+            justify-items: start;
+        }
+    }
+}
