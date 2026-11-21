@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/PetCareTracker/static/css/main.afc33dcb.css",
+    "main.js": "/PetCareTracker/static/js/main.cee2c73a.js",
+    "static/js/453.37b40076.chunk.js": "/PetCareTracker/static/js/453.37b40076.chunk.js",
+    "static/media/Warning.jpg": "/PetCareTracker/static/media/Warning.89c74f39d22f9f28f5a2.jpg",
+    "static/media/cats.jpg": "/PetCareTracker/static/media/cats.861e54b0d4097076e047.jpg",
+    "static/media/Hydration.jpg": "/PetCareTracker/static/media/Hydration.248f5cde1477b0605805.jpg",
+    "static/media/Hydration1.jpg": "/PetCareTracker/static/media/Hydration1.efd52596fb0160b8d94a.jpg",
+    "static/media/catpack.jpg": "/PetCareTracker/static/media/catpack.c902d07f6c89c51634f4.jpg",
+    "static/media/hygiene2.jpg": "/PetCareTracker/static/media/hygiene2.a845ff5c4d3c889253d6.jpg",
+    "static/media/dogmaple.jpg": "/PetCareTracker/static/media/dogmaple.c677b35b73e892497013.jpg",
+    "static/media/dogread.jpg": "/PetCareTracker/static/media/dogread.06dcb3b1c240b58c5f21.jpg",
+    "static/media/dogs.jpg": "/PetCareTracker/static/media/dogs.ef97a837c586c1661fc7.jpg",
+    "static/media/dogsurf3.jpg": "/PetCareTracker/static/media/dogsurf3.f536e67498f1e199702a.jpg",
+    "static/media/family.jpg": "/PetCareTracker/static/media/family.f4b87543afc3c7b1947d.jpg",
+    "static/media/dogbanff.jpg": "/PetCareTracker/static/media/dogbanff.75742398755d89197f89.jpg",
+    "static/media/dogsurf.jpg": "/PetCareTracker/static/media/dogsurf.006673455e04ee16a655.jpg",
+    "static/media/catdog.jpg": "/PetCareTracker/static/media/catdog.eb19be2834556a58958a.jpg",
+    "static/media/hygiene.jpg": "/PetCareTracker/static/media/hygiene.f00b7d51ed147a748d36.jpg",
+    "static/media/dogcar.jpg": "/PetCareTracker/static/media/dogcar.9900c5df58f566c0fbc7.jpg",
+    "static/media/dogsurf1.jpg": "/PetCareTracker/static/media/dogsurf1.2a11c70f40bb769527ce.jpg",
+    "static/media/catdog7.png": "/PetCareTracker/static/media/catdog7.8aa1b73646de81302f91.png",
+    "static/media/nutrition.png": "/PetCareTracker/static/media/nutrition.7beb6d841763ac4f05c7.png",
+    "static/media/veteriat.png": "/PetCareTracker/static/media/veteriat.c06958b3fd6cd9871d99.png",
+    "static/media/dogflower.jpg": "/PetCareTracker/static/media/dogflower.3eb7003cc8f8fccf211f.jpg",
+    "static/media/cat1.jpg": "/PetCareTracker/static/media/cat1.98b647e90d2da6574398.jpg",
+    "static/media/nutrition2.png": "/PetCareTracker/static/media/nutrition2.32735272dfafa1ba78a9.png",
+    "static/media/dog1.jpg": "/PetCareTracker/static/media/dog1.f62a29c49908adc4b50b.jpg",
+    "static/media/dogcat.jpg": "/PetCareTracker/static/media/dogcat.5d960cf4e91205363ceb.jpg",
+    "static/media/logo.png": "/PetCareTracker/static/media/logo.c4996b2736b6ca818204.png",
+    "index.html": "/PetCareTracker/index.html",
+    "main.afc33dcb.css.map": "/PetCareTracker/static/css/main.afc33dcb.css.map",
+    "main.cee2c73a.js.map": "/PetCareTracker/static/js/main.cee2c73a.js.map",
+    "453.37b40076.chunk.js.map": "/PetCareTracker/static/js/453.37b40076.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afc33dcb.css",
+    "static/js/main.cee2c73a.js"
+  ]
+}
