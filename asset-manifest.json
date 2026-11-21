@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PetCareTracker/static/css/main.afc33dcb.css",
-    "main.js": "/PetCareTracker/static/js/main.cee2c73a.js",
+    "main.js": "/PetCareTracker/static/js/main.fcd2b9cd.js",
     "static/js/453.37b40076.chunk.js": "/PetCareTracker/static/js/453.37b40076.chunk.js",
     "static/media/Warning.jpg": "/PetCareTracker/static/media/Warning.89c74f39d22f9f28f5a2.jpg",
     "static/media/cats.jpg": "/PetCareTracker/static/media/cats.861e54b0d4097076e047.jpg",
@@ -31,11 +31,11 @@
     "static/media/logo.png": "/PetCareTracker/static/media/logo.c4996b2736b6ca818204.png",
     "index.html": "/PetCareTracker/index.html",
     "main.afc33dcb.css.map": "/PetCareTracker/static/css/main.afc33dcb.css.map",
-    "main.cee2c73a.js.map": "/PetCareTracker/static/js/main.cee2c73a.js.map",
+    "main.fcd2b9cd.js.map": "/PetCareTracker/static/js/main.fcd2b9cd.js.map",
     "453.37b40076.chunk.js.map": "/PetCareTracker/static/js/453.37b40076.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.afc33dcb.css",
-    "static/js/main.cee2c73a.js"
+    "static/js/main.fcd2b9cd.js"
   ]
 }
