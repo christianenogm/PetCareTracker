@@ -1,5 +1,9 @@
 # Pet Care Tracker
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Project-2ea44f?style=for-the-badge)](https://christianenogm.github.io/PetCareTracker/)
+
+> **View the running application:** https://christianenogm.github.io/PetCareTracker/
+
 A web application for pet registration and tracking, with care tasks and data persistence using Firebase Firestore.
 
 ## About the project

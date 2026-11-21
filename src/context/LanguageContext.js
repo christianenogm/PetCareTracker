@@ -6,33 +6,21 @@
  * Provides language state and useLanguage hook for all components.
  */
 
-import { createContext, useContext, useEffect, useMemo, useState } from 'react';
+import { createContext, useContext, useMemo, useState } from 'react';
 
 // Create context for bilingual language support
 const LanguageContext = createContext(null);
 
-// Detect initial language from localStorage, browser settings, or default to English
+// Detect initial language from localStorage, defaulting to English
 function detectInitialLanguage() {
   const saved = localStorage.getItem('pet-care-language');
-  if (saved === 'en' || saved === 'pt') {
-    return saved;
-  }
-
-  if ((navigator.language || '').toLowerCase().startsWith('pt')) {
-    return 'pt';
-  }
-
-  return 'en';
+  return saved === 'pt' ? 'pt' : 'en';
 }
 
 // Provider component - wraps app with language state and toggle functionality
 export function LanguageProvider({ children }) {
   // State: current language ('en' or 'pt')
-  const [language, setLanguage] = useState('en');
-
-  useEffect(() => {
-    setLanguage(detectInitialLanguage());
-  }, []);
+  const [language, setLanguage] = useState(detectInitialLanguage);
 
   const setAppLanguage = (nextLanguage) => {
     setLanguage(nextLanguage);
